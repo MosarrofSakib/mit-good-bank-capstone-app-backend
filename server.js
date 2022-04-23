@@ -4,8 +4,9 @@ const dbConfig = require("./config/db.config");
 
 const app = express();
 
+orogins = ["http://localhost:3000", "http://3.16.67.155"];
 var corsOptions = {
-  origin: "http://localhost:3000" || "http://3.16.67.155",
+  origin: orogins,
 };
 
 app.use(cors(corsOptions));
